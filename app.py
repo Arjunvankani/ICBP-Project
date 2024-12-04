@@ -9,7 +9,7 @@ import pickle
 
 
 # Load and preprocess the dataset
-dataset = pd.read_csv("data\general.csv")
+dataset = pd.read_csv("data/general.csv")
 X = dataset.drop('Disease', axis=1)
 y = dataset['Disease']
 scaler = StandardScaler()
@@ -23,11 +23,11 @@ model.fit(X, y)
 
 # loading the saved models
  
-diabetes_model = pickle.load(open("model\diabetes_model.sav", 'rb'))
+diabetes_model = pickle.load(open("model/diabetes_model.sav", 'rb'))
  
-heart_disease_model = pickle.load(open("model\heart_disease_model1.sav",'rb'))
+heart_disease_model = pickle.load(open("model/heart_disease_model1.sav",'rb'))
 
-parkinsons_model = pickle.load(open("model\parkinsons_model.sav", 'rb'))
+parkinsons_model = pickle.load(open("model/parkinsons_model.sav", 'rb'))
 
 def predict_disease(temp_f, pulse_rate_bpm, vomiting, yellowish_urine, indigestion):
     # Prepare user input as a single-row DataFrame
