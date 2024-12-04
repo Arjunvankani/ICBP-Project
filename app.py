@@ -97,7 +97,7 @@ def interpret_bmi(bmi):
 # sidebar for navigation
 def main():
     with st.sidebar:
-        image = Image.open('images/navbar.png')
+        image = Image.open("images/navbar.png")
         st.image(image,width =200)
         selected = option_menu('Disease Diagnosis and Recommendation System',
                              
@@ -144,7 +144,7 @@ def main():
                #st.write(f"Predicted Disease: {predicted_disease}")    
        
         with col2:
-            image = Image.open('images/general.png')
+            image = Image.open("images/general.png")
             st.image(image,width =500)
        
     # Diabetes Prediction Page
@@ -182,7 +182,7 @@ def main():
             Age = st.text_input('Age')
        
         with col4:
-            image = Image.open('images/diabetes.png')
+            image = Image.open("images/diabetes.png")
             st.image(image,width = 400)  
  
         # code for Prediction
@@ -255,7 +255,7 @@ def main():
             thal = st.text_input('Results of Nuclear Stress Test(0,1,2)')
            
         with col4:
-            image = Image.open('images/heart.png')
+            image = Image.open("images/heart.png")
             st.image(image,width =350)
  
          
@@ -359,7 +359,7 @@ def main():
             PPE = st.text_input('PPE')
            
         with col6:
-            image = Image.open('images/parkinsons.png')
+            image = Image.open("images/parkinsons.png")
             st.image(image,width =350)
  
        
@@ -404,7 +404,7 @@ def main():
                 st.write(f"Your BMI: {bmi:.2f}")
                 st.write(f"Category: {category}")
         with col2:
-            image = Image.open('images/bmi.png')
+            image = Image.open("images/bmi.png")
             st.image(image,width =350)  
  
  
